@@ -1,0 +1,19 @@
+---
+title: "MethodsOfDataAnalysis: A package with a template for STAT 411/412"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{MethodsOfDataAnalysis: A package with a template for STAT 411/412}
+  %\VignettePackage{MethodsOfDataAnalysis}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(comment = "")
+library(MethodsOfDataAnalysis)
+```
+
+This package contains an R markdown template for STAT 411/412 reports. In RStudio, you can click on new rmarkdown document and then from templates to find the templates.
+
