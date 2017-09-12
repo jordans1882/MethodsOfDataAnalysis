@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction to R</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Jordan Schupbach" />
+    <link href="libs/remark-css-0.0.1/example.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introduction to R
+### Jordan Schupbach
+### 2017/09/11
+
+---
+
+
+.left-column[
+  ## What is R?
+  ### - What is S?
+  ### - Where R came from.
+]
+.right-column[
+- R is 'GNU S', a libre (free) software environment for statistical computing under
+the Free Software Foudation's GNU General Public Liscense.
+- R is a dynamic, lexically scoped, functional, class based object oriented
+programming (OOP) language written for statistical computation often written by
+statisticians.
+- Through its base set of packages and extensive number of packages, you can
+conduct nearly any statistical analyses with ease.
+- S is a statistical programming language developed by John Chambers, Rick
+  Becker, and Alan Wilks at Bell Labs. It's first implementation was in 1976.
+- S was superceded by S-PLUS, commercial software owned by TIBCO.
+- R is an implementation of S with lexical scoping.
+- R was created by Ross Ihaka and Robert Gentleman at the University at Aukland,
+New Zealand.
+- It's inception was in 1992, it's initial version was released in 1995 and the
+first stable version in 2000.
+]
+
+---
+
+&lt;!-- {{{ Slide 2: Why use R? --&gt;
+
+Why use R?
+===============
+
+- R is a programming language available, libre, as Free Software under the Free
+Software Foudation's GNU General Public Liscense
+- Maintained and supported by a large community of statisticians.
+- Over 5000 packages on CRAN to extend its base functionality.
+- R is written in C, Fortan, and R. It can easily be extended through Java
+  and C++.
+- With careful coding, R can be quite fast.
+- It's easy and fun.
+
+&lt;!-- }}} Slide 2: Why use R? --&gt;
+
+---
+layout: false
+.left-column[
+  ## What is it?
+]
+.right-column[
+  A simple, in-browser, Markdown-driven slideshow tool targeted at people who know their way around HTML and CSS, featuring:
+
+- Markdown formatting, with smart extensions
+
+- Presenter mode, with cloned slideshow view
+
+- Syntax highlighting, supporting a range of languages
+
+- Slide scaling, thus similar appearance on all devices / resolutions .red[*]
+
+- Touch support for smart phones and pads, i.e. swipe to navigate slides
+
+.footnote[.red[*] At least browsers try their best]
+]
+---
+.left-column[
+  ## What is it?
+  ## Why use it?
+]
+.right-column[
+If your ideal slideshow creation workflow contains any of the following steps:
+
+- Just write what's on your mind
+
+- Do some basic styling
+
+- Easily collaborate with others
+
+- Share with and show to everyone
+
+Then remark might be perfect for your next.red[*] slideshow!
+
+.footnote[.red[*] You probably want to convert existing slideshows as well]
+]
+---
+.left-column[
+  ## What is it?
+  ## Why use it?
+]
+.right-column[
+As the slideshow is expressed using Markdown, you may:
+
+- Focus on the content, expressing yourself in next to plain text not worrying what flashy graphics and disturbing effects to put where
+
+As the slideshow is actually an HTML document, you may:
+
+- Display it in any decent browser
+
+- Style it using regular CSS, just like any other HTML content
+
+- Use it offline!
+
+As the slideshow is contained in a plain file, you may:
+
+- Store it wherever you like; on your computer, hosted from your Dropbox, hosted on Github Pages alongside the stuff you're presenting...
+
+- Easily collaborate with others, keeping track of changes using your favourite SCM tool, like Git or Mercurial
+]
+---
+template: inverse
+
+## How does it work, then?
+---
+name: how
+
+.left-column[
+  ## How does it work?
+### - Markdown
+]
+.right-column[
+A Markdown-formatted chunk of text is transformed into individual slides by JavaScript running in the browser:
+
+```remark
+# Slide 1
+This is slide 1
+
+---
+
+# Slide 2
+This is slide 2
+```
+
+.slides[
+  .first[
+  ### Slide 1
+  This is slide 1
+  ]
+  .second[
+  ### Slide 2
+  This is slide 2
+  ]
+]
+
+Regular Markdown rules apply with only a single exception:
+
+  - A line containing three dashes constitutes a new slide
+  (not a horizontal rule, `&amp;lt;hr /&amp;gt;`)
+
+Have a look at the [Markdown website](http://daringfireball.net/projects/markdown/) if you're not familiar with Markdown formatting.
+]
+---
+.left-column[
+  ## How does it work?
+  ### - Markdown
+  ### - Inside HTML
+]
+.right-column[
+A simple HTML document is needed for hosting the styles, Markdown and the generated slides themselves:
+
+```xml
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type="text/css"&gt;
+      /* Slideshow styles */
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+*    &lt;textarea id="source"&gt;
+      &lt;!-- Slideshow Markdown --&gt;
+    &amp;lt;/textarea&amp;gt;
+*    &lt;script src="remark.js"&gt;
+    &lt;/script&gt;
+    &lt;script&gt;
+*      var slideshow = remark.create();
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+```
+
+You may download remark to have your slideshow not depend on any online resources, or reference the [latest version](http://remarkjs.com/downloads/remark-latest.min.js) online directly.
+]
+---
+template: inverse
+
+## Of course, Markdown can only go so far.
+---
+.left-column[
+  ## Markdown extensions
+]
+.right-column[
+To help out with slide layout and formatting, a few Markdown extensions have been included:
+
+- Slide properties, for naming, styling and templating slides
+
+- Content classes, for styling specific content
+
+- Syntax highlighting, supporting a range of languages
+]
+
+---
+.left-column[
+  ## Markdown extensions
+  ### - Slide properties
+]
+.right-column[
+Initial lines containing key-value pairs are extracted as slide properties:
+
+```remark
+name: agenda
+class: middle, center
+
+# Agenda
+
+The name of this slide is {{ name }}.
+```
+
+Slide properties serve multiple purposes:
+
+* Naming and styling slides using properties `name` and `class`
+
+* Using slides as templates using properties `template` and `layout`
+
+* Expansion of `{{ property }}` expressions to property values
+
+See the [complete list](https://github.com/gnab/remark/wiki/Markdown#slide-properties) of slide properties.
+]
+---
+.left-column[
+  ## Markdown extensions
+  ### - Slide properties
+  ### - Content classes
+]
+.right-column[
+Any occurences of one or more dotted CSS class names followed by square brackets are replaced with the contents of the brackets with the specified classes applied:
+
+```remark
+.footnote[.red.bold[*] Important footnote]
+```
+
+Resulting HTML extract:
+
+```xml
+&lt;span class="footnote"&gt;
+  &lt;span class="red bold"&gt;*&lt;/span&gt; Important footnote
+&lt;/span&gt;
+```
+]
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {window.dispatchEvent(new Event('resize'));});
+(function() {var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler"); if (!r) return; s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }"; d.head.appendChild(s);})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

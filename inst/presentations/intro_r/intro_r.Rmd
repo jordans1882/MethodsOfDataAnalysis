@@ -1,0 +1,350 @@
+---
+title: "Introduction to R"
+author: "Jordan Schupbach"
+output:
+  revealjs::revealjs_presentation:
+    fig_height: 6
+    fig_width: 10
+    fig_crop: FALSE
+    css: styles.css
+    theme: "black"
+    slide_level: 1
+    transition: "slide"
+    incremental: TRUE
+    self_contained: TRUE
+---
+
+<!-- {{{ Slide 1: What is R? -->
+# What is R?
+
+- R is 'GNU S', a libre (free) software environment for statistical computing under
+the Free Software Foudation's GNU General Public Liscense.
+- R is a dynamic, lexically scoped, functional, class based object oriented
+programming (OOP) language written for statistical computation often written by
+statisticians.
+- Through its base set of packages and extensive number of packages, you can
+conduct nearly any statistical analyses with ease.
+
+# What is S?
+- S is a statistical programming language developed by John Chambers, Rick
+  Becker, and Alan Wilks at Bell Labs. It's first implementation was in 1976.
+- S was superceded by S-PLUS, commercial software owned by TIBCO.
+
+# Where R came from
+R is an implementation of S with lexical scoping.
+- R was created by Ross Ihaka and Robert Gentleman at the University at Aukland,
+New Zealand.
+- It's inception was in 1992, it's initial version was released in 1995 and the
+first stable version in 2000.
+
+<!-- }}} Slide 1: What is R? -->
+<!-- {{{ Slide 2: Why use R? -->
+
+Why use R?
+===============
+
+- R is a programming language available, libre, as Free Software under the Free
+Software Foudation's GNU General Public Liscense
+- Maintained and supported by a large community of statisticians.
+- Over 5000 packages on CRAN to extend its base functionality.
+- R is written in C, Fortan, and R. It can easily be extended through Java
+  and C++.
+- With careful coding, R can be quite fast.
+- It's easy and fun.
+
+<!-- }}} Slide 2: Why use R? -->
+<!-- {{{ Slide 3: RStudio Tips and Tricks? -->
+R Studio Tips and Tricks
+========================================================
+
+RStudio is an IDE developed specifically for programming in R (though there is
+functionality for programming in other programming languages). Here's some tips
+for using RStudio.
+
+- Keep your workspace clean (i.e., don't save your workspace at the end of a
+session and don't use attach() unless you have some really great reason to do
+so).
+- Open a file in Rstudio, and then set your working directory to the file
+location
+using Session -> Set Working Directory -> Source File Location
+- Customize your RStudio IDE by changing the global options by Tools -> Global
+Options. You might:
+  - Modify your color scheme
+  - Modify pane layout
+  - Change R startup options or editor settings (e.g. code completion)
+  - Enable vim keybindings
+
+<!-- }}} Slide 3: RStudio Tips and Tricks? -->
+<!-- {{{ Slide 4: RStudio Tips and Tricks -->
+R Studio Tips and Tricks
+========================================================
+
+- Use keybindings
+  - Ctrl + Enter to run a line of code
+  - Ctrl + Shift + k to compile your rmarkdown or knitr document
+  - Ctrl + 1, Ctrl + 2, ... to make certain panes in RStudio active
+  - Ctrl + Shift + n to open a new R script
+  - You can see all and modify keybindings using Tools -> Modify Keyboard
+  Shortcuts
+
+<!-- }}} Slide 4: RStudio Tips and Tricks -->
+<!-- {{{ Slide 5: So you're new to R programming -->
+So you're new to R programming (and maybe programming)?
+========================================================
+
+Fear not programming in R. It is quite easy and there is a plethora of material
+out on the internet.
+- Your first step when you have an R question is to type it into a search engine.
+Chances are that someone has asked this question before and someone has responded
+to them on some forum site like stack exchange
+  - How strong is your Google Fu?
+
+<!-- }}} Slide 5: So you're new to R programming -->
+<!-- {{{ Slide 6: Object Oriented Programming -->
+Object Oriented Programming
+===========================
+
+- Object oriented programming is a programming paradigm based on the concept of
+"objects" which can be either data (i.e. fields) or procedures (i.e. methods).
+- Class based OOP languages have the added notion of types of objects (i.e.
+class)
+- R has four main object oriented paradigms for which you can create classes,
+methods and objects: S3, S4, R5, and R6
+  - S3 and S4 objects are the most popular and likely all you will encounter
+  - R6 is based on the R5 paradigm, which you might want to use if speed is
+  crucial.
+  - There are other reasons why you might want to write in one paradigm or
+  the other, such as some program more naturally falling within one paradigm or
+  the other, but these details aren't important for when you just learning R
+- OOP concepts are not something to worry about while you're learning R, but you
+may want to know whether you are dealing with an S3 or an S4 object (i.e.,
+when looking at source code or extracting objects from an object).
+- The basic implication is that you should recognize that every bit of code, if
+it runs, is an object that you can inspect. Even arguments you give in a
+functionare objects. So, if you want to inspect a line of code with a function
+you don't know, you can not only inspect the help documentation, but you can
+inspect the arguments to the function as well.
+
+<!-- }}} Slide 6: Object Oriented Programming -->
+<!-- {{{ Slide 7: Object Structure -->
+Object structure
+================
+
+- R is an OOP language. Learn how to use the str() command to look at the
+structure of an object.
+  - Knowing what type of object you are dealing with can help you diagnose how
+  to extract what you need from it.
+```{r structure}
+data(iris)
+str(iris)
+```
+The output tells us that the object iris is of data.frame class with 150
+observations (rows) and 5 variables (e.g. Sepal.Length). If you look at the help
+documentation for the function `data.frame()` (i.e. `?data.frame`),
+which creates objects of class `data.frame`, you can see examples of creating
+data.frame objects.
+<!-- }}} Slide 7: Object Structure -->
+<!-- {{{ Slide 8: data.frame objects -->
+data.frame objects
+===================
+
+- data.frame objects are basic R objects that are the fundamental data structures
+used by most of R's modeling software.
+- Effectively, a data.frame is a list of variables of the same number rows with
+unique row names.
+- To extract the component of the list named `Sepal.Length`, we can run
+```{r extract_variable}
+iris$Sepal.Length
+```
+By default, R will use the `print` method on an object when you run an object by
+itself
+
+<!-- }}} Slide 8: data.frame objects -->
+<!-- {{{ Slide 9: Vector objects -->
+
+Vector objects
+===============
+
+The object `iris$Sepal.Length` is what is called a vector. Specifically it is a
+numeric vector of length 150.
+```{r structure_sepal}
+str(iris$Sepal.Length)
+```
+We can access the 28th element of the vector using square bracket notation:
+```{r structure_sepal_28}
+str(iris$Sepal.Length[28])
+```
+For which the object is now a numeric vector of length one whose value is 5.2.
+
+<!-- }}} Slide 9: Vector objects -->
+<!-- {{{ Slide 10: Another Object Structure -->
+Another Object structure
+========================
+
+Let's look at a linear model object. Print the first 9 lines of the output
+of the `str()` function using the following code.
+```{r lm}
+lm1 <- lm(Sepal.Length ~ Sepal.Width, data = iris)
+print(gsub("\"", "", head(capture.output(str(lm1)), 9)))
+```
+We can see that the object `lm1` is a list object of length 12, the first 5 elements
+of which we can see are named coefficients, residuals, effects, rank and fitted.values.
+We see `lm1$coefficients` is a named numeric vector of length 2, whose values are
+6.526 and -0.223. lm1 is also an S3 object, because it's slots are accessed using `$`
+instead of `@` (for S4 objects).
+
+<!-- }}} Slide 10: Another Object Structure -->
+<!-- {{{ Slide 11: R documentation and source code -->
+
+R documentation and source code
+================================
+
+- Read the documentation of a function if you don't know exactly how it works.
+- Use `?function_name` or `help(function_name)` to look at the documentation of
+a function. Make sure to look at the examples at the bottom of the help
+- Check out the help documentation for plot and plot.default
+
+```{r help, eval = FALSE}
+?plot
+?plot.default
+```
+- We will go through the difference between `plot` and `plot.default` in a few
+slides, but notice there are a larger set of graphical parameters set as arguments
+by default for the plot.default method.
+- Also notice the `...` argument to the function. This is used to pass arguments
+from some other function. In this case, they are passed from `par()`. Make sure
+to look at the help for par to see all of the possible graphical parameters you
+can set.
+
+<!-- }}} Slide 11: R documentation and source code -->
+<!-- {{{ Slide 12: Function source code -->
+
+Function source code
+====================
+
+Run a line of code with only the function name in R console to see the source
+code of a function, (e.g. plot or plot.default).
+
+```{r plotsource}
+plot
+```
+
+Seeing the call to the `UseMethod()` function tells me that this is a generic S3 function.
+
+<!-- }}} Slide 12: Function source code -->
+<!-- {{{ Slide 13: Function source code -->
+
+Function source code
+====================
+
+```{r plotsource1}
+plot.default
+```
+
+<!-- }}} Slide 13: Function source code -->
+<!-- {{{ Slide 14: plot() vs plot.default -->
+plot() vs plot.default()
+========================
+
+- `plot.default` is the default method for the generic S3 function `plot()`
+
+We can see all of the available methods for this generic plotting function using
+the `methods()` function
+
+```{r plotmethods}
+methods(plot)
+```
+Functions with an asterisk are 'non-visible', meaning the function is not exported
+from the package's namespace.
+
+<!-- }}} Slide 14: plot() vs plot.default -->
+<!-- {{{ Slide 15: Viewing source code from non-exported S3 functions -->
+
+Viewing source code from non-exported S3 functions
+===========================================
+
+These functions which aren't exported from their packages namespace have a
+certain way to view source code. We can vew the source for instance using the
+`:::` function
+
+```{r plottablesource}
+gsub("\"", "", head(capture.output(graphics:::plot.table), 8))
+```
+
+<!-- }}} Slide 15: Viewing source code from non-exported S3 functions -->
+<!-- {{{ S4 Objects -->
+
+S4 objects
+===========
+
+S4 objects have a slightly different storage format than S3 objects. Consider
+the following S4 object.
+
+```{r}
+lmer1 <- lme4::lmer(Sepal.Length ~ Sepal.Width + (1|Species), data = iris)
+gsub("\"", "", head(capture.output(str(lmer1)), 8))
+```
+
+<!-- }}} S4 Objects -->
+<!-- {{{ Slide 17: Accessing S4 object slots -->
+
+Accessing S4 object slots
+=========================
+
+We can access slots of an S4 object using `@`. For instance, we can obtain the first
+100 fitted values from the model using
+```{r}
+head(lmer1@resp$mu, 100)
+```
+
+<!-- }}} Slide 17: Accessing S4 object slots -->
+<!-- {{{ Slide 18: User defined functions -->
+
+User defined functions
+=======================
+
+You can also define your own functions in R. If you're going to be doing some
+operation in R, it's a good habbit to functionalize the process so that you can
+reuse it later and save on programming time.
+
+- Here's a simple example of a function you could define
+
+```{r stuff}
+foo <- function(bar){
+  return(list(foo = "foo", bar = bar))
+}
+print(foo("bar"))
+```
+The function `foo()` takes `bar` as an object and simply returns the object `bar`.
+Not a great example of why you would want to functionalize something, but does
+show you the mechanics.
+
+<!-- }}} Slide 18: User defined functions -->
+<!-- {{{ Slide 19: A small test -->
+A small test
+=============
+
+What would you expect to see as output from the following?
+
+```{r morestuff, results = 'hide'}
+foo("bar")$foo
+```
+
+<!-- }}} Slide 19: A small test -->
+<!-- {{{ Slide 20: Viewing the source -->
+<
+Viewing the source
+==================
+
+Now that `foo()` is a function defined in our global environment, we can access
+it's source code again by writing the name of the function in console.
+
+```{r foobarsource}
+foo
+methods(foo)
+```
+
+There are no methods written for this function, as we haven't defined any.
+
+<!-- }}} Slide 20: Viewing the source -->
+
