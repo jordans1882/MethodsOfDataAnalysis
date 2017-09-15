@@ -8,6 +8,7 @@
 $	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^!a&&c?(b.sSortingClass=d.sSortableDesc,b.sSortingClassJUI=d.sSortJUIDescAllowed):(b.sSortingClas/;"	f
 $	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^b)}}var m=function(a){this.$=function(a,b){return this.api(!0).$(a,b)};this._=function(a,b){retu/;"	m	class:AnonymousFunction5d89297e3b00
 *	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.pull-right ~ * {$/;"	s
+*	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.pull-right ~ * {$/;"	s
 .dataTables_scrollBody .dataTables_sizing	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/css/jquery.dataTables.extra.css	/^.dataTables_scrollBody .dataTables_sizing {$/;"	c
 .dataTables_wrapper	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/css/jquery.dataTables.min.css	/^table.dataTable{width:100%;margin:0 auto;clear:both;border-collapse:separate;border-spacing:0}ta/;"	c
 .dataTables_wrapper .dataTables_filter	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/css/jquery.dataTables.min.css	/^table.dataTable{width:100%;margin:0 auto;clear:both;border-collapse:separate;border-spacing:0}ta/;"	c
@@ -36,23 +37,39 @@ $	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jque
 .dataTables_wrapper.no-footer div.dataTables_scrollHead table	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/css/jquery.dataTables.min.css	/^table.dataTable{width:100%;margin:0 auto;clear:both;border-collapse:separate;border-spacing:0}ta/;"	s
 .dataTables_wrapper:after	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/css/jquery.dataTables.min.css	/^table.dataTable{width:100%;margin:0 auto;clear:both;border-collapse:separate;border-spacing:0}ta/;"	c
 .footnote	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.footnote {$/;"	c
+.footnote	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.footnote {$/;"	c
 .inverse	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.inverse {$/;"	c
+.inverse	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.inverse {$/;"	c
 .inverse h1	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.inverse h1, .inverse h2, .inverse h3 {$/;"	s
+.inverse h1	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.inverse h1, .inverse h2, .inverse h3 {$/;"	s
 .inverse h2	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.inverse h1, .inverse h2, .inverse h3 {$/;"	s
+.inverse h2	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.inverse h1, .inverse h2, .inverse h3 {$/;"	s
 .inverse h3	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.inverse h1, .inverse h2, .inverse h3 {$/;"	s
+.inverse h3	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.inverse h1, .inverse h2, .inverse h3 {$/;"	s
 .left-column	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.left-column {$/;"	c
+.left-column	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.left-column {$/;"	c
 .left-column h2:last-of-type	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.left-column h2:last-of-type, .left-column h3:last-child {$/;"	s
+.left-column h2:last-of-type	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.left-column h2:last-of-type, .left-column h3:last-child {$/;"	s
 .left-column h3:last-child	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.left-column h2:last-of-type, .left-column h3:last-child {$/;"	s
+.left-column h3:last-child	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.left-column h2:last-of-type, .left-column h3:last-child {$/;"	s
 .pull-left	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.pull-left {$/;"	c
+.pull-left	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.pull-left {$/;"	c
 .pull-right	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.pull-right {$/;"	c
 .pull-right	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.pull-right ~ * {$/;"	c
+.pull-right	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.pull-right {$/;"	c
+.pull-right	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.pull-right ~ * {$/;"	c
 .remark-code	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, mo/;"	c
+.remark-code	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, mo/;"	c
 .remark-code-line-highlighted	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.remark-code-line-highlighted     { background-color: #ffff88; }$/;"	c
+.remark-code-line-highlighted	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.remark-code-line-highlighted     { background-color: #ffff88; }$/;"	c
 .remark-inline-code	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, mo/;"	c
+.remark-inline-code	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, mo/;"	c
 .remark-slide-scaler	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^  .remark-slide-scaler {$/;"	c
+.remark-slide-scaler	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^  .remark-slide-scaler {$/;"	c
 .reveal section p	inst/presentations/intro_r/styles.css	/^.reveal section p {$/;"	s
 .reveal section ul	inst/presentations/intro_r/styles.css	/^.reveal section ul {$/;"	s
 .right-column	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^.right-column {$/;"	c
+.right-column	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^.right-column {$/;"	c
 0	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/chunks.json	/^{"chunk_definitions":[{"chunk_id":"css61reg3yzbi","chunk_label":"intall_pkgs","document_id":"665/;"	o	array:chunk_definitions
 A small test	inst/presentations/intro_r/intro_r.html	/^<h1>A small test<\/h1>$/;"	h
 AB	R/mat_mult.R	/^  AB <- matrix(NA, outer_dim1, outer_dim2)$/;"	v
@@ -1002,7 +1019,9 @@ Zb	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.m
 _	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^b)}}var m=function(a){this.$=function(a,b){return this.api(!0).$(a,b)};this._=function(a,b){retu/;"	m	class:AnonymousFunction5d89297e3b00
 _	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^p.length;g<j;g++)Ea(o,t?t[g]:null);ib(o,e.aoColumnDefs,p,function(a,b){ja(o,a,b)});if(v.length){/;"	p	class:c.mData
 a	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^a, a > code {$/;"	s
+a	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^a, a > code {$/;"	s
 a > code	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^a, a > code {$/;"	s
+a > code	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^a, a > code {$/;"	s
 aa	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^function aa(a){var b=0;h.each(a.aoColumns,function(a,d){d.bVisible&&"none"!==h(d.nTh).css("displ/;"	f
 abort	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^marginLeft:0},function(){return a.getBoundingClientRect().left}):0))+"px":void 0}),n.each({margi/;"	m	class:w
 addOne	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/datatables-binding-0.2/datatables.js	/^    var addOne = function(x) {$/;"	m	class:AnonymousFunction4398b7a00200
@@ -1017,7 +1036,9 @@ b	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.mi
 bb	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^}return c}function Q(a){var b;for(b in a)if(("data"!==b||!n.isEmptyObject(a[b]))&&"toJSON"!==b)r/;"	f
 bindType	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^}return c}function Q(a){var b;for(b in a)if(("data"!==b||!n.isEmptyObject(a[b]))&&"toJSON"!==b)r/;"	p	class:n.event.special
 blockquote	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^blockquote {$/;"	s
+blockquote	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^blockquote {$/;"	s
 body	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^body { font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaH/;"	s
+body	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^body { font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaH/;"	s
 c	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^(e.attr("style")||"").match(\/width:\\s*(\\d+[pxem%]+)\/);f&&(b.sWidthOrig=f[1])}c!==k&&null!==c/;"	f	function:ja
 c	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^function Ja(a){return h.map(a.match(\/(\\\\.|[^\\.])+\/g)||[""],function(a){return a.replace(\/\\/;"	f	function:Q
 c	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^marginLeft:0},function(){return a.getBoundingClientRect().left}):0))+"px":void 0}),n.each({margi/;"	c	class:AnonymousFunctiondf4033741bf00
@@ -1168,8 +1189,11 @@ h	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/htmlwidgets-0.8/htmlwid
 h	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^!function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.documen/;"	f	function:AnonymousFunctiondf403374b400
 h	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^}return c}function Q(a){var b;for(b in a)if(("data"!==b||!n.isEmptyObject(a[b]))&&"toJSON"!==b)r/;"	f	function:AnonymousFunctiondf403374d000
 h1	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^h1, h2, h3 {$/;"	s
+h1	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^h1, h2, h3 {$/;"	s
 h2	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^h1, h2, h3 {$/;"	s
+h2	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^h1, h2, h3 {$/;"	s
 h3	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^h1, h2, h3 {$/;"	s
+h3	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^h1, h2, h3 {$/;"	s
 ha	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^!function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.documen/;"	f
 handle	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^}return c}function Q(a){var b;for(b in a)if(("data"!==b||!n.isEmptyObject(a[b]))&&"toJSON"!==b)r/;"	m	class:n.event.special
 hasClass	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/htmlwidgets-0.8/htmlwidgets.js	/^  function hasClass(el, className) {$/;"	f
@@ -1184,7 +1208,9 @@ ia	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.m
 ib	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^g!==d.length-1)break;if("html"===q)break}if(q){l.sType=q;break}}l.sType||(l.sType="string")}}fun/;"	f
 ic	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^marginLeft:0},function(){return a.getBoundingClientRect().left}):0))+"px":void 0}),n.each({margi/;"	f
 iframe	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^img, video, iframe {$/;"	s
+iframe	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^img, video, iframe {$/;"	s
 img	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^img, video, iframe {$/;"	s
+img	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^img, video, iframe {$/;"	s
 inArray	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/datatables-binding-0.2/datatables.js	/^    var inArray = function(val, array) {$/;"	f	function:AnonymousFunction4398b7a00200
 initSizing	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/htmlwidgets-0.8/htmlwidgets.js	/^  function initSizing(el) {$/;"	f
 initialize	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/htmlwidgets-0.8/htmlwidgets.js	/^      initialize: function(el, width, height) {$/;"	m	class:createLegacyDefinitionAdapter.result
@@ -1312,7 +1338,9 @@ t	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jque
 ta	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^ta(a))}else setTimeout(function(){ga(a)},200)}function ta(a,b){a._bInitComplete=!0;(b||a.oInit.a/;"	f
 ta	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^!function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.documen/;"	f
 table	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^table {$/;"	s
+table	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^table {$/;"	s
 table thead th	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^table thead th { border-bottom: 1px solid #ddd; }$/;"	s
+table thead th	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^table thead th { border-bottom: 1px solid #ddd; }$/;"	s
 table.dataTable	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/css/jquery.dataTables.min.css	/^table.dataTable{width:100%;margin:0 auto;clear:both;border-collapse:separate;border-spacing:0}ta/;"	c
 table.dataTable tbody td	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/css/jquery.dataTables.min.css	/^table.dataTable{width:100%;margin:0 auto;clear:both;border-collapse:separate;border-spacing:0}ta/;"	s
 table.dataTable tbody td.dt-body-center	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/css/jquery.dataTables.min.css	/^table.dataTable{width:100%;margin:0 auto;clear:both;border-collapse:separate;border-spacing:0}ta/;"	c
@@ -1455,16 +1483,21 @@ table.dataTable.stripe tbody tr.odd	.Rproj.user/shared/notebooks/61A92C0C-skelet
 table.dataTable.stripe tbody tr.odd.selected	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/css/jquery.dataTables.min.css	/^table.dataTable{width:100%;margin:0 auto;clear:both;border-collapse:separate;border-spacing:0}ta/;"	c
 tb	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^h("<div><label\/><\/div>").addClass(b.sLength);a.aanFeatures.l||(i[0].id=c+"_length");i.children/;"	f
 td	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^th, td { padding: 5px; }$/;"	s
+td	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^th, td { padding: 5px; }$/;"	s
 teardown	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^}return c}function Q(a){var b;for(b in a)if(("data"!==b||!n.isEmptyObject(a[b]))&&"toJSON"!==b)r/;"	m	class:n.event.special
 test	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^marginLeft:0},function(){return a.getBoundingClientRect().left}):0))+"px":void 0}),n.each({margi/;"	f	function:yb
 tfoot	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^thead, tfoot, tr:nth-child(even) { background: #eee }$/;"	s
+tfoot	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^thead, tfoot, tr:nth-child(even) { background: #eee }$/;"	s
 th	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^th, td { padding: 5px; }$/;"	s
+th	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^th, td { padding: 5px; }$/;"	s
 thead	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^thead, tfoot, tr:nth-child(even) { background: #eee }$/;"	s
+thead	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^thead, tfoot, tr:nth-child(even) { background: #eee }$/;"	s
 then	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^!function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.documen/;"	m	class:d
 time	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^c._aSortData||(c._aSortData=[]),!c._aSortData[b]||d)f=d?e[j]:B(a,j,b,"sort"),c._aSortData[b]=g?g/;"	p	class:wa.b
 top	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^marginLeft:0},function(){return a.getBoundingClientRect().left}):0))+"px":void 0}),n.each({margi/;"	p	class:AnonymousFunctiondf4033741bd00.d
 top	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^marginLeft:0},function(){return a.getBoundingClientRect().left}):0))+"px":void 0}),n.each({margi/;"	p	class:AnonymousFunctiondf4033741bf00.c
 tr:nth-child(even)	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^thead, tfoot, tr:nth-child(even) { background: #eee }$/;"	s
+tr:nth-child(even)	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^thead, tfoot, tr:nth-child(even) { background: #eee }$/;"	s
 transposeArray2D	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/datatables-binding-0.2/datatables.js	/^var transposeArray2D = function(a) {$/;"	f
 transposeArray2D	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/htmlwidgets-0.8/htmlwidgets.js	/^  window.HTMLWidgets.transposeArray2D = function(array) {$/;"	f	function:window.HTMLWidgets
 tweakCellIndex	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/datatables-binding-0.2/datatables.js	/^    var tweakCellIndex = function(cell) {$/;"	m	class:AnonymousFunction4398b7a00200
@@ -1484,6 +1517,7 @@ valHooks	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jq
 value	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^!0),ra(a,ub(a),function(b){vb(a,b)}),!1):!0}function ub(a){var b=a.aoColumns,c=b.length,d=a.oFea/;"	p	class:ub.S.search
 vb	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/dt-core-1.10.12/js/jquery.dataTables.min.js	/^a,b.dir)}),k("iSortingCols",q.length));b=m.ext.legacy.ajax;return null===b?a.sAjaxSource?j:S:b?j/;"	f
 video	inst/presentations/intro_r/libs/remark-css-0.0.1/example.css	/^img, video, iframe {$/;"	s
+video	inst/presentations/intro_r_presentation/libs/remark-css-0.0.1/example.css	/^img, video, iframe {$/;"	s
 visible	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/chunks.json	/^{"chunk_definitions":[{"chunk_id":"css61reg3yzbi","chunk_label":"intall_pkgs","document_id":"665/;"	b	object:chunk_definitions.0
 w	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/htmlwidgets-0.8/htmlwidgets.js	/^              w: sizeObj ? sizeObj.getWidth() : el.offsetWidth,$/;"	p	class:AnonymousFunction8ff6bd6c0800.resizeHandler.size
 w	.Rproj.user/shared/notebooks/61A92C0C-skeleton/1/s/lib/jquery-1.12.4/jquery.min.js	/^marginLeft:0},function(){return a.getBoundingClientRect().left}):0))+"px":void 0}),n.each({margi/;"	c

@@ -11,7 +11,7 @@ bibliography: bibliography.bib
 titlepage: yes
 ---
 
-```{r pkgs, echo = FALSE, message = FALSE}
+```{r pkgs, echo = FALSE, message = FALSE, warning = FALSE}
 # Initialize environment
 # R environment
 # {{{ Step 1: Set up working environment
@@ -54,6 +54,7 @@ use_package('gridExtra') # For grid arrange
 ```
 
 ```{r analysis, echo = FALSE, results = 'hide', fig.keep='none', message = FALSE, error = FALSE}
+# The dataframe iris is available in R's dataset package that is automatically loaded when you start R
 # Subset the data
 iris_sub <- subset(iris, iris$Species == "setosa" |
                    iris$Species == "versicolor")
@@ -68,38 +69,38 @@ preds <- predict(z)$class
 ## Tables:
 # Table 1
 head(iris)
-print(xtable(head(iris), caption = "First 6 lines of the dataset",
-             label = "data-head"),
-      comment = FALSE)
+#print(xtable(head(iris), caption = "First 6 lines of the dataset",
+#             label = "data-head"),
+#      comment = FALSE)
 
 # Table 2
 summary(iris)
-stargazer(iris, iqr = TRUE,
-          type = "latex", header = FALSE, label = "summary",
-          title = "Summary table of the four quantitative variables")
+#stargazer(iris, iqr = TRUE,
+#          type = "latex", header = FALSE, label = "summary",
+#          title = "Summary table of the four quantitative variables")
 
 # Table 3
 z$mean
-print(xtable(z$mean, label = "means-tbl", caption = "Group means"),
-      comment = FALSE)
+#print(xtable(z$mean, label = "means-tbl", caption = "Group means"),
+#      comment = FALSE)
 
 # Table 4
 z$scaling
-print(xtable(z$scaling, label = "scaling-tbl", 
-             caption = "Coefficients of linear discriminants"),
-      comment = FALSE)
+#print(xtable(z$scaling, label = "scaling-tbl", 
+#             caption = "Coefficients of linear discriminants"),
+#      comment = FALSE)
 
 # Table 5
 (1/z$scaling[1]) * z$scaling
-print(xtable((1/z$scaling[1]) * z$scaling, label = "scaling-unity-tbl", 
-  caption = "Coefficients of linear discriminants with first scaled to unity"),
-      comment = FALSE)
+#print(xtable((1/z$scaling[1]) * z$scaling, label = "scaling-unity-tbl", 
+#  caption = "Coefficients of linear discriminants with first scaled to unity"),
+#      comment = FALSE)
 
 # Table 6: Confusion Matrix
 table(preds, iris_sub$Species)
-print(xtable(table(preds, iris_sub$Species), label = "confusion", 
-             caption = "Confusion matrix"),
-      comment = FALSE)
+#print(xtable(table(preds, iris_sub$Species), label = "confusion", 
+#             caption = "Confusion matrix"),
+#      comment = FALSE)
 
 ## Figures
 # Figure 1:
@@ -139,7 +140,7 @@ plot4 <- ggplot(iris, aes(x=Petal.Width))
 plot4<- plot4 + geom_histogram(aes(fill = Species))
 theme_set(theme_gray(base_size = 18))
 m<-grid.arrange(plot1,plot2, plot3,plot4, ncol=2)
-print(m)
+# print(m)
 
 
 # Figure 4:
@@ -374,16 +375,7 @@ plot(z)
 R-code
 ------
 
-```{r analysis, echo = TRUE, results = 'hide', fig.keep='none', message = FALSE, error = FALSE, size='tiny'}
-```
-
-Document Creation Info
-----------------------
-```{r 12, echo = FALSE, message=FALSE, results = 'asis', message=FALSE, warning=FALSE}
-require(devtools)
-require(printr)
-require(knitr)
-pander(session_info())
+```{r analysis, echo = TRUE, results = 'markup', fig.keep='none', message = FALSE, error = FALSE, size='tiny'}
 ```
 
 References
